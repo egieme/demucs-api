@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: demucs-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash start.sh
+    envVars:
+      - key: DEMUC_API_KEY
+        value: dein-api-key-hier
